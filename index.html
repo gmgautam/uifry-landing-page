@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <style>
-    
     ul li {
       font-family: "ClashDisplay-Medium";
     }
@@ -126,12 +125,11 @@
       background-repeat: no-repeat;
       background-size: contain;
     }
-    .hero-phns{
+    .hero-phns {
       background-image: url("./images/Ellipse\ 2.png");
       background-repeat: no-repeat;
-      background-position-y:190px ;
+      background-position-y: 190px;
       background-size: contain;
-      
     }
     @media (min-width: 320px) and (max-width: 640px) {
       .fotter-heading h5 {
@@ -141,46 +139,64 @@
         margin-top: 5px !important;
       }
       .imagen-grediant {
-      position: absolute;
-      top: 10px;
-      left:30px;
+        position: absolute;
+        top: 10px;
+        left: 30px;
+      }
+      .hero-phns {
+        background-image: url("./images/Ellipse\ 2.png");
+        background-repeat: no-repeat;
+        background-position-y: 100px;
+        background-size: contain;
+      }
+      .image-div {
+        width: 100%;
+        height: 250px !important;
+        background-position: center;
+        background-size: contain;
+        object-fit: cover;
+        background-image: url("./images/Group\ 35924.svg");
+        background-repeat: no-repeat;
+      }
     }
-    .hero-phns{
-      background-image: url("./images/Ellipse\ 2.png");
-      background-repeat: no-repeat;
-      background-position-y:100px ;
-      background-size: contain;
-      
+    @media (min-width: 768px) {
+      .hero-phns {
+        background-image: url("./images/Ellipse\ 2.png");
+        background-repeat: no-repeat;
+        background-position-y: 120px;
+        background-size: contain;
+      }
+      .fotter-heading h5 {
+        font-size:28px !important;
+        text-align: start;
+      }
+      ul li{
+        text-align:start;
+      }
     }
-    .image-div {
+      .image-div {
       width: 100%;
       height: 250px !important;
-      background-position: center;
+      background-position-x: 0px;
+      background-position-y: 30px;
       background-size: contain;
       object-fit: cover;
       background-image: url("./images/Group\ 35924.svg");
       background-repeat: no-repeat;
     }
-    }
-@media (min-width:768px){
-  .hero-phns{
-      
-      background-image: url("./images/Ellipse\ 2.png");
-      background-repeat: no-repeat;
-      background-position-y:120px ;
-      background-size: contain;
-      
-    }
-}
     .copy-write {
       border-top: 1px solid black;
-      border-image-source: linear-gradient(90deg, rgba(22, 22, 22, 0) 0%, #696969 51.56%, rgba(22, 22, 22, 0) 100%
+      border-image-source: linear-gradient(
+        90deg,
+        rgba(22, 22, 22, 0) 0%,
+        #696969 51.56%,
+        rgba(22, 22, 22, 0) 100%
       );
+      
     }
-   
   </style>
   <body>
-    <div class="main-container max-w-[1920px]  mx-auto">
+    <div class="main-container max-w-[1920px] mx-auto">
       <div class="container-uifry overflow-hidden">
         <!-- header -->
         <header
@@ -212,7 +228,7 @@
         <!-- end-header -->
         <!-- ####################################################################################> -->
         <!-- hero-section-start -->
-        <section >
+        <section>
           <div
             class="hero-container pl-[20px] pr-[20px] md:pl-[60px] md:pr-[60px] lg:pl-[140px] lg:pr-[10px] flex flex-col-reverse md:flex-row sm:justify-normal justify-center w-full"
           >
@@ -222,17 +238,19 @@
               <div
                 class="inner-ledt-div top-[30px] relative flex sm:h-[400px] items-end"
               >
-                <div class="absolute xl:left-[-85px] top-[30px]">
+                <div class="absolute xl:left-[-85px] top-[-30px] md:top-[30px]   ">
                   <img src="./images/Star 3.png" alt="" />
                 </div>
-                <div class="imagen-grediant hidden lg:block" >
-                  <div class="inner-gredient "></div>
+                <div class="imagen-grediant hidden lg:block">
+                  <div class="inner-gredient"></div>
                   <div class="shape bg-red-color"></div>
-                  <div class=" shape bg-yellow-color "></div>
+                  <div class="shape bg-yellow-color"></div>
                 </div>
                 <div class="flex flex-col md:gap-[20px]">
-                  <div data-aos="zoom-in" data-aos-duration="1000"
-                    class=" md:mt-[40px] text-[24px] md:text-[30px] xl:text-[56px] 2xl:text-[64px] font-[ClashDisplay-Bold] lg:leading-[65px] max-w-[618px]"
+                  <div
+                    data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    class="md:mt-[40px] text-[24px] md:text-[30px] xl:text-[56px] 2xl:text-[64px] font-[ClashDisplay-Bold] lg:leading-[65px] max-w-[618px]"
                   >
                     <h1>Make The Best Financial Decisions</h1>
                   </div>
@@ -245,7 +263,7 @@
                       Porttitor.
                     </p>
                   </div>
-                  <div 
+                  <div
                     class="button mt-[10px] flex flex-col sm:flex-row items-center gap-[15px] mb-[10px] md:gap-[30px]"
                   >
                     <button
@@ -267,26 +285,39 @@
               <div class="image-div md:!h-[400px]">
                 <img
                   src="./images/Star 3.png"
-                  class="relative top-[70px] left-[150px]"
+                  class="relative top-[20px] md:top-[70px] left-[150px]"
                   alt="start"
                 />
               </div>
             </div>
-            <div class="right-image-div  flex justify-end md:w-[50%] pr-[30px]" data-aos="fade-up-left" data-aos-duration="1000">
-              <div class=" relative hero-phns "><img src="./images/Group_1000004720-ai-brush-removebg-iqk3ub0q.png" alt="" /></div>
+            <div
+              class="right-image-div flex justify-end md:w-[50%] pr-[30px]"
+              data-aos="fade-up-left"
+              data-aos-duration="1000"
+            >
+              <div class="relative hero-phns">
+                <img
+                  src="./images/Group_1000004720-ai-brush-removebg-iqk3ub0q.png"
+                  alt=""
+                />
+              </div>
             </div>
-            <div data-aos="zoom-in" data-aos-duration="1000" ><img src="./images/Star 3.png" alt=""></div>
+            <div data-aos="zoom-in" data-aos-duration="1000">
+              <img src="./images/Star 3.png" alt="" />
+            </div>
           </div>
         </section>
         <!-- End-hero section -->
 
         <!-- Feature-section -->
-        <section  >
+        <section>
           <div class="Featuresection mt-[30px] flex justify-evenly">
             <div
               class="relative feature-main-div pl-[20px] pr-[20px] md:pl-[60px] lg:pl-[140px] lg:pr-[120px] w-full flex flex-col md:flex-row justify-evenly"
             >
-              <div data-aos="zoom-in" data-aos-duration="1000"
+              <div
+                data-aos="zoom-in"
+                data-aos-duration="1000"
                 class="relative image-div-iphone xl:h-[450px] flex justify-center items-center mt-[50px] lg:w-[50%]"
               >
                 <img
@@ -302,7 +333,7 @@
                 <div
                   class="feature-discription flex flex-col mt-[60px] 2xl:mt-[10px] gap-5"
                 >
-                  <div class="sub-title-div" data-aos="fade-down-left" >
+                  <div class="sub-title-div" data-aos="fade-down-left">
                     <p
                       class="text-center md:text-start text-[18px] text-[#FF5555] font-[ClashDisplay-Medium] tracking-[3px]"
                     >
@@ -315,7 +346,7 @@
                     </h3>
                   </div>
                   <!-- buget-1 div -->
-                  <div class="buget-div" >
+                  <div class="buget-div">
                     <div class="icon-subtitle flex gap-2">
                       <span><img src="./images/star-05.png" alt="" /></span>
                       <h4>Budgeting Intervals</h4>
@@ -372,7 +403,7 @@
         </section>
 
         <!-- Advantages Section -->
-        <section class="overflow-hidden" >
+        <section class="overflow-hidden">
           <div
             class="pl-[20px] pr-[20px] md:pl-[60px] md:pr-[60px] lg:pl-[140px] lg:pr-[140px]"
           >
@@ -380,7 +411,8 @@
               class="flex flex-col-reverse md:flex-row justify-evenly items-center"
             >
               <!-- Text Content -->
-              <div data-aos="zoom-in"
+              <div
+                data-aos="zoom-in"
                 class="max-w-[535px] text-center md:text-start md:w-1/2 mb-8 md:mb-0"
               >
                 <h5
@@ -420,7 +452,11 @@
               <div class="relative w-full md:w-1/2">
                 <!-- Gradient Background -->
                 <!-- Phone Image -->
-                <div class="z-10 advanctage-bg" data-aos="zoom-in-up" data-aos-duration="1000">
+                <div
+                  class="z-10 advanctage-bg"
+                  data-aos="zoom-in-up"
+                  data-aos-duration="1000"
+                >
                   <img
                     src="./images/adtv-mg.png"
                     alt="iPhone"
@@ -437,19 +473,23 @@
         <!-- end-advance################################################################## -->
 
         <!-- Fully- coustomization -->
-        <section class="overflow-hidden" >
+        <section class="overflow-hidden">
           <div
             class="pl-[20px] pr-[20px] md:pl-[60px] md:pr-[60px] lg:pl-[140px] lg:pr-[140px]"
           >
-            <div class="flex flex-wrap justify-evenly items-center" >
+            <div class="flex flex-wrap justify-evenly items-center">
               <!-- Image Section -->
               <div class="relative w-full md:w-1/2">
                 <!-- Gradient Background -->
-                <div 
+                <div
                   class="hidden absolute inset-0 xl:w-72 h-72 bg-gradient-to-r from-red-500 via-orange-400 to-yellow-300 rounded-full filter blur-3xl opacity-50"
                 ></div>
                 <!-- Phone Image -->
-                <div class="relative z-10 customization-bg" data-aos="fade-down-right" data-aos-duration="1000">
+                <div
+                  class="relative z-10 customization-bg"
+                  data-aos="fade-down-right"
+                  data-aos-duration="1000"
+                >
                   <img
                     src="./images/CUSTOM-PNG.png"
                     alt="iPhone"
@@ -462,7 +502,11 @@
               </div>
               <!-- Text Content -->
               <div class="max-w-[535px] md:text-start md:w-1/2 mb-8 md:mb-0">
-                <div class="flex items-center mb-4" data-aos="fade-up-left" data-aos-duration="1000" >
+                <div
+                  class="flex items-center mb-4"
+                  data-aos="fade-up-left"
+                  data-aos-duration="1000"
+                >
                   <div
                     class="bg-[#FF5555] w-[35px] h-[35px] xl:w-[48px] xl:h-[48px] rounded-full"
                   >
@@ -489,7 +533,7 @@
         </section>
 
         <!-- Container Testimonial-->
-        <section  >
+        <section>
           <div
             class="pl-[20px] pr-[20px] md:pl-[60px] md:pr-[60px] lg:pl-[140px] lg:pr-[140px]"
           >
@@ -526,13 +570,21 @@
                   class="relative xl:h-64 flex justify-center xl:left-[-40px] items-center md:w-[50%]"
                 >
                   <!-- Large circles -->
-                  <div class="advanctage-bg xl:mt-[70px]" data-aos="zoom-in" data-aos-duration="1000">
+                  <div
+                    class="advanctage-bg xl:mt-[70px]"
+                    data-aos="zoom-in"
+                    data-aos-duration="1000"
+                  >
                     <img src="./images/testimonial-png.png" alt="" />
                   </div>
                 </div>
 
                 <!-- Testimonial Text Section -->
-                <div class="max-w-[470px]" data-aos="fade-left" data-aos-duration="1000" >
+                <div
+                  class="max-w-[470px]"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                >
                   <h2
                     class="text-[18px] lg:text-[28px] font-[ClashDisplay-Semibold]"
                   >
@@ -562,9 +614,9 @@
         </section>
 
         <!-- FAQ Section -->
-        <section class="mb-[50px] overflow-hidden ">
+        <section class="mb-[50px] overflow-hidden">
           <div
-            class="pl-[20px] pr-[20px] md:pl-[60px] mt-[200px] md:pr-[60px] lg:pl-[140px] lg:pr-[140px]"
+            class="pl-[20px] pr-[20px] md:pl-[60px] mt-[80px] lg:mt-[200px] md:pr-[60px] lg:pl-[140px] lg:pr-[140px]"
           >
             <div class="relative 2xl:pl-[60px] max-w-[500px] mb-[25px]">
               <h5
@@ -589,7 +641,9 @@
             <div class="flex xl:justify-evenly flex-col sm:flex-row gap-10">
               <div class="grid-div flex flex-col gap-5">
                 <!-- FAQ Card 1 -->
-                <div data-aos="fade-right" data-aos-duration="1000"
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
                   class="bg-[#FF5555] max-w-[535px] h-[181px] p-6 rounded-md shadow-md"
                 >
                   <h2
@@ -606,7 +660,7 @@
                 </div>
 
                 <!-- FAQ Card 2 -->
-                <div 
+                <div
                   class="bg-white max-w-[535px] h-[181px] p-6 rounded-md shadow-md"
                 >
                   <h2
@@ -659,7 +713,9 @@
                 </div>
 
                 <!-- FAQ Card 5 -->
-                <div data-aos="fade-left" data-aos-duration="1000"
+                <div
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
                   class="bg-[#FF5555] max-w-[535px] h-[181px] p-6 rounded-md shadow-md"
                 >
                   <h2
@@ -675,7 +731,7 @@
                   </p>
                 </div>
                 <!-- FAQ Card 6 -->
-                <div 
+                <div
                   class="bg-white max-w-[535px] h-[181px] p-6 rounded-md shadow-md"
                 >
                   <h2
@@ -698,12 +754,16 @@
 
         <!-- Ready-to-get-satated -->
         <!-- Container -->
-        <section class="  mt-[90px] mb-[50px] " data-aos="zoom-out-up" data-aos-duration="1000" >
+        <section
+          class="mt-[90px] mb-[50px]"
+          data-aos="zoom-out-up"
+          data-aos-duration="1000"
+        >
           <div
             class="relative ready-get-started pl-[20px] pr-[20px] md:pl-[60px] md:pr-[60px] lg:pl-[190px] lg:pr-[190px]"
           >
             <div
-              class="hidden lg:block absolute top-[-150px] -z-[1] left-[-32px] "
+              class="hidden lg:block absolute top-[-150px] -z-[1] left-[-32px]"
             >
               <img src="./images/adtv-bg.png" alt="" />
             </div>
@@ -713,10 +773,10 @@
               alt=""
             />
 
-            <div class="absolute top-[130px] left-[60px] z-[99]"  >
+            <div class="absolute lg:top-[130px] left-[60px] z-[99]">
               <img src="./images/Star 3.png" alt="" />
             </div>
-            <div class="absolute top-[-50px] right-[60px]">
+            <div class="absolute top-[-50px]  right-[60px]">
               <img src="./images/Star 3.png" alt="" />
             </div>
           </div>
@@ -724,28 +784,37 @@
         <!-- ######################################################################End -->
 
         <!-- Footer -->
-        <footer class="lg:mt-[100px] min-h-[500px]  ">
+        <footer class="lg:mt-[100px] min-h-[500px] ">
           <div class="pt-[100px]">
             <div
-              class="pl-[20px] pr-[20px] md:pl-[60px] md:pr-[60px] lg:pl-[190px] lg:pr-[190px]"
+              class="sm:pl-[10px] sm:pr-[10px] md:pl-[60px] md:pr-[60px] lg:pl-[190px] text-center lg:pr-[190px] bg-white"
             >
               <div
-                class="flex flex-wrap xl:flex-nowrap gap-[40px] justify-between items-start"
+                class="flex flex-wrap xl:flex-nowrap md:gap-[40px] justify-between items-start "
               >
                 <!-- Logo and Contact Info -->
-                <div class="w-full md:w-1/5 mb-6 md:mb-0">
-                  <div class="flex items-center mb-4">
+                <div class="w-full  flex flex-col justify-center items-center   md:w-5/5 lg:w-5/5 xl:w-1/5 mb-6 md:mb-0">
+                  <div class="flex  items-center mb-1">
                     <img src="./images/logo uifry.png" alt="Logo" />
                   </div>
-                  <ul>
-                    <li ><a href="#" class="flex gap-1"> <span><img src="./images/mail.png" alt=""></span> Help@FryBox.Com</a></li>
-                    <li><a href="#" class="flex gap-1"> <img src="./images/call.png" alt=""> +123445667889</a></li>
+                  <ul  class=" md:flex md:flex-row xl:flex-col gap-5 xl:gap-[0px]">
+                    <li>
+                      <a href="#" class="flex gap-1 ">
+                        <span><img src="./images/mail.png" alt="" /></span>
+                        Help@FryBox.Com</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="flex gap-1">
+                        <img src="./images/call.png" alt="" /> +123445667889</a
+                      >
+                    </li>
                   </ul>
                 </div>
 
-                <div class="link-div flex flex-wrap w-[900px]">
+                <div class="link-div flex justify-between   flex-wrap md:flex-nowrap w-[970px]  ">
                   <!-- Links -->
-                  <div class="fotter-heading w-full lg:w-1/5 mb-6 md:mb-0">
+                  <div class="fotter-heading w-full md:w-1/5 lg:w-1/5 mb-6 md:mb-0">
                     <h5>Links</h5>
                     <ul>
                       <li>
@@ -800,21 +869,21 @@
                   </div>
 
                   <!-- Newsletter -->
-                  <div class="fotter-heading md:w-2/5">
+                  <div class="fotter-heading flex flex-col items-center md:items-start    w-[100%] md:w-1/5 md:mr-[50px] lg:mr-[0px] xl:w-2/5">
                     <h5>Newsletter</h5>
                     <p
-                      class="text-sm mt-[20px] text-[16px] font-[ClashDisplay-Medium] text-black mb-4"
+                      class="text-sm mt-[20px] text-start text-[16px] font-[ClashDisplay-Medium] text-black mb-4"
                     >
                       Stay Up To Date
                     </p>
-                    <form class="flex">
+                    <form class="flex justify-center">
                       <input
                         type="email"
-                        class="px-4 text-gray-700 bg-gray-200 rounded-l-lg focus:outline-none font-[ClashDisplay-Medium]"
+                        class="px-4 text-gray-700 bg-gray-200 rounded-l-lg focus:outline-none font-[ClashDisplay-Medium] w-[200px] md:w-[100px] lg:w-[180px]  "
                         placeholder="Your email"
                       />
                       <button
-                        class="w-[80px] h-[35px] sm:rounded-[2px] text-[12px] lg:text-[16px] md:w-[100px] font-[ClashDisplay-Medium] md:h-[40px] lg:w-[180px] lg:h-[50px] bg-[#000000] text-white shadow-md"
+                        class="w-[80px] h-[35px] sm:rounded-[2px] text-[12px] lg:text-[12px] md:w-[80px] font-[ClashDisplay-Medium] md:h-[40px] xl:w-[120px] 2xl:w-[180px] lg:h-[50px] bg-[#000000] text-white shadow-md"
                       >
                         Subscribe
                       </button>
@@ -825,14 +894,18 @@
 
               <!-- Copyright -->
 
-              
               <div
-                class="  copy-write  min-h-[70px] border-t border-gray-400 relative mt-[30px] xl:top-[40px]"
+                class="copy-write min-h-[70px] border-t border-gray-400 relative mt-[30px] xl:top-[40px]"
               >
-              <div class="absolute inset-0 h-0.5 bg-gradient-to-r from-transparent via-gray-400 to-transparent"> <p class="text-center text-[16px] font-[ClashDisplay-Medium] flex justify-center md:items-center mt-[10px] min-h-[50px]">
-                Copyright 2022 Uifry.Com All Rights Reserved
-              </p></div>
-                
+                <div
+                  class="absolute inset-0 h-0.5 bg-gradient-to-r from-transparent via-gray-400 to-transparent"
+                >
+                  <p
+                    class="text-center text-[16px] font-[ClashDisplay-Medium] flex justify-center md:items-center mt-[10px] min-h-[50px]"
+                  >
+                    Copyright 2022 Uifry.Com All Rights Reserved
+                  </p>
+                </div>
               </div>
             </div>
           </div>
